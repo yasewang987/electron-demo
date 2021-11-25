@@ -18,7 +18,7 @@ function createWindow() {
     crmWindow.on('closed', () => {
       crmWindow = undefined
     })
-    crmWindow.webContents.openDevTools()
+    // crmWindow.webContents.openDevTools()
     crmWindow.loadURL('http://crm.ifuncun.cn:8080/funcun')
   }
 

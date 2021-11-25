@@ -10,10 +10,11 @@ function createWindow() {
     webPreferences: {
       // preload: path.join(__dirname, "preload.js"),
       nodeIntegration: true,
+      // 这个参数是为了处理无法识别 require 函数的报错
       contextIsolation: false
     }
   })
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
   mainWindow.loadFile('main/index.html')
 }
 
